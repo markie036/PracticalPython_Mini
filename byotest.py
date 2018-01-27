@@ -26,15 +26,15 @@ test_not_equal(1,2);
 def test_is_in(collection, item):
     assert item in collection, "{0} does not contain {1}".format(collection,item)
     
-test_is_in([1,2,3,4],5)
+test_is_in([1,2,3,4],3)
 #TEST 3 ends
 
-"""
+#TEST 4
 def test_not_in(collection, item):
     assert item not in collection, "{0} does contain {1}".format(collection,item)
 
 test_not_in([1,2,3,4],3)
+#TEST 4 ends
 
-"""
 
 print("All tests so far have passed");

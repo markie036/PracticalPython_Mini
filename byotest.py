@@ -33,8 +33,15 @@ test_is_in([1,2,3,4],3)
 def test_not_in(collection, item):
     assert item not in collection, "{0} does contain {1}".format(collection,item)
 
-test_not_in([1,2,3,4],3)
+test_not_in([1,2,3,4],5)
 #TEST 4 ends
 
+#TEST 5
+def test_between(lower, upper, value):
+    assert not value < lower and not value > upper, "Value is not in range"
 
-print("All tests so far have passed");
+test_between(3, 8, 5)
+#TEST 5 ends
+
+
+print("All tests so far have passed")

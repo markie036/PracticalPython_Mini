@@ -43,5 +43,3 @@ def test_between(lower, upper, value):
 test_between(3, 8, 5)
 #TEST 5 ends
 
-
-print("All tests so far have passed")
